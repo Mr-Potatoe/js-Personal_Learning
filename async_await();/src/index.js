@@ -26,42 +26,21 @@ async function fetchUsers() {
     }
 }
 
-
-// fetchUsers()    
-//     .then(users => {
-//         console.log('Fetched users:',users);
-//     })
-//     .catch(error => {
-//         console.error('Error fetching users:', error);
-//     })
-
-
 function displayUsers(users) {
     const userList = document.getElementById('user-list');
     userList.innerHTML = '';
 
     users.forEach(user => {
-        const li = document.createElement('li');
-        li.innerHTML = `
-                <div class="user-info">
-                    <strong>Name:</strong>  ${user.name}<br>
-                    <strong>Email:</strong>  ${user.email}<br>
-                    <strong>Address:</strong>  ${user.address.street}, ${user.address.city}<br>
-                    <strong>Phone:</strong>  ${user.phone}<br>
-                </div> `;
-        userList.appendChild(li);
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+            <td>${user.name}</td>
+            <td>${user.email}</td>
+            <td>${user.address.street}, ${user.address.city}</td>
+            <td>${user.phone}</td> `;
+        userList.appendChild(tr);
     });
 }
 
-// fetchUsers().then(users => {
-//     if(users) {
-//         displayUsers(users);
-//     }
-// })
-// .catch(error => {
-//     console.error('Error fetching users:', error);
-//     document.getElementById('demo').innerHTML = 'Error fetching users';
-// });
 
 async function loadUsers() {
     try {

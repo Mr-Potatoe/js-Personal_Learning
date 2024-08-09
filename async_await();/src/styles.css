@@ -17,10 +17,10 @@ body  {
 
 .header,
 .container { 
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     padding: 20px;
-    background: #fff;
+    background: #0f0648;
     border-radius: 8px;
     border-style: solid;
     border-width: 1px;
@@ -31,19 +31,22 @@ h1 {
     text-align: center;
     color: #333;
 }   
-
-ul {
-    list-style: none;
+th {
+    padding: 10px;
+    border-bottom: 2px solid #ddd;
+}
+tr {
+    border-bottom: 1px solid #ddd;
     padding: 0;
     margin: 0;
 }
 
-li {
-    padding: 10px;
+td {
+    padding: 20px;
     border-bottom: 1px solid #ddd;
 }
 
-li:last-child {
+td:last-child {
     border-bottom: none;
 }
 
