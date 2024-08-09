@@ -1,5 +1,5 @@
 Great! Diving into advanced JavaScript concepts can be both challenging and rewarding. Here’s a roadmap to guide you through more complex JavaScript topics and algorithms:
-
+<!-- =================================================================================================================== -->
 ### 1. **Advanced JavaScript Concepts**
 
 1. **Closures**:
@@ -17,7 +17,7 @@ Great! Diving into advanced JavaScript concepts can be both challenging and rewa
      console.log(counter()); // 1
      console.log(counter()); // 2
      ```
-
+<!-- =================================================================================================================== -->
 2. **Promises and Async/Await**:
    - **Definition**: Techniques for handling asynchronous operations.
    - **Example** (Promises):
@@ -40,7 +40,7 @@ Great! Diving into advanced JavaScript concepts can be both challenging and rewa
      }
      getData();
      ```
-
+<!-- =================================================================================================================== -->
 3. **Prototypes and Inheritance**:
    - **Definition**: JavaScript’s way of handling inheritance and sharing properties/methods.
    - **Example**:
@@ -61,7 +61,7 @@ Great! Diving into advanced JavaScript concepts can be both challenging and rewa
      const dog = new Dog('Rex');
      dog.speak(); // Rex makes a noise.
      ```
-
+<!-- =================================================================================================================== -->
 4. **ES6+ Features**:
    - **Arrow Functions**:
      ```javascript
@@ -81,7 +81,7 @@ Great! Diving into advanced JavaScript concepts can be both challenging and rewa
          return numbers.reduce((acc, num) => acc + num, 0);
      }
      ```
-
+<!-- =================================================================================================================== -->
 5. **Modules**:
    - **Definition**: Encapsulation of code into modules using `import` and `export`.
    - **Example**:
@@ -95,7 +95,7 @@ Great! Diving into advanced JavaScript concepts can be both challenging and rewa
      import { add } from './math.js';
      console.log(add(2, 3)); // 5
      ```
-
+<!-- =================================================================================================================== -->
 ### 2. **Complex Algorithms and Data Structures**
 
 1. **Sorting Algorithms**:
@@ -123,7 +123,7 @@ Great! Diving into advanced JavaScript concepts can be both challenging and rewa
          return [...quickSort(left), ...middle, ...quickSort(right)];
      }
      ```
-
+<!-- =================================================================================================================== -->
 2. **Data Structures**:
    - **Linked Lists**:
      ```javascript
@@ -153,6 +153,7 @@ Great! Diving into advanced JavaScript concepts can be both challenging and rewa
          }
      }
      ```
+<!-- =================================================================================================================== -->
    - **Trees**:
      ```javascript
      class TreeNode {
@@ -166,7 +167,7 @@ Great! Diving into advanced JavaScript concepts can be both challenging and rewa
          }
      }
      ```
-
+<!-- =================================================================================================================== -->
 3. **Graph Algorithms**:
    - **Depth-First Search (DFS)**:
      ```javascript
@@ -184,7 +185,7 @@ Great! Diving into advanced JavaScript concepts can be both challenging and rewa
          return visited;
      }
      ```
-
+<!-- =================================================================================================================== -->
    - **Breadth-First Search (BFS)**:
      ```javascript
      function bfs(graph, start) {
@@ -201,7 +202,7 @@ Great! Diving into advanced JavaScript concepts can be both challenging and rewa
          return visited;
      }
      ```
-
+<!-- =================================================================================================================== -->
 ### Resources for Further Learning
 
 - **Books**: 
@@ -216,4 +217,4 @@ Great! Diving into advanced JavaScript concepts can be both challenging and rewa
   - [LeetCode](https://leetcode.com/)
   - [HackerRank](https://www.hackerrank.com/)
 
-Feel free to ask if you have specific questions about any of these topics or need further explanations!
+<!-- =================================================================================================================== -->
