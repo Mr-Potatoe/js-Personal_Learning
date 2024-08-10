@@ -1,7 +1,8 @@
+
 ```markdown
 # JavaScript Guide
 
-This guide covers JavaJavaScript concepts from basic to advanced with real-world examples and interactive code snippets.
+Welcome to the JavaScript Guide! This interactive README covers JavaScript concepts from basic to advanced with real-world examples and interactive code snippets.
 
 ## Table of Contents
 
@@ -21,6 +22,7 @@ This guide covers JavaJavaScript concepts from basic to advanced with real-world
 
 **Example:** Inventory Management System
 
+[![Try it on CodePen](https://img.shields.io/badge/Try%20it%20on-CodePen-blue)](https://codepen.io/pen?template=mdXWyK)
 ```html
 <!DOCTYPE html>
 <html>
@@ -30,30 +32,29 @@ This guide covers JavaJavaScript concepts from basic to advanced with real-world
 <body>
   <h1>Check the console for the output</h1>
   <script>
-    // Define variables to manage inventory
     let itemName = 'Laptop';
-    const itemPrice = 999.99; // Constant price
+    const itemPrice = 999.99;
 
-    // Function to update item name
     function updateItemName(newName) {
       itemName = newName;
     }
 
-    console.log(`Item: ${itemName}, Price: $${itemPrice}`); // Item: Laptop, Price: $999.99
+    console.log(`Item: ${itemName}, Price: $${itemPrice}`);
 
     updateItemName('Gaming Laptop');
-    console.log(`Updated Item: ${itemName}`); // Updated Item: Gaming Laptop
+    console.log(`Updated Item: ${itemName}`);
   </script>
 </body>
 </html>
 ```
 
-*Explanation:* Variables store and update information about items in an inventory system. Open this HTML file in a browser and check the console to see the results.
+*Explanation:* Variables store and update information about items in an inventory system. Open the [CodePen](https://codepen.io/pen?template=mdXWyK) to see the results.
 
 ### Data Types
 
 **Example:** User Profile
 
+[![Try it on CodePen](https://img.shields.io/badge/Try%20it%20on-CodePen-blue)](https://codepen.io/pen?template=mdXWyK)
 ```html
 <!DOCTYPE html>
 <html>
@@ -63,14 +64,13 @@ This guide covers JavaJavaScript concepts from basic to advanced with real-world
 <body>
   <h1>Check the console for the user profile</h1>
   <script>
-    // Define user profile
     let userProfile = {
-      username: 'john_doe', // String
-      age: 30,              // Number
-      isActive: true,       // Boolean
-      address: null,        // Null
-      preferences: ['email', 'sms'], // Array
-      details: undefined    // Undefined
+      username: 'john_doe',
+      age: 30,
+      isActive: true,
+      address: null,
+      preferences: ['email', 'sms'],
+      details: undefined
     };
 
     console.log(userProfile);
@@ -79,12 +79,13 @@ This guide covers JavaJavaScript concepts from basic to advanced with real-world
 </html>
 ```
 
-*Explanation:* Different data types are used to manage a user's profile and preferences. Open this HTML file in a browser and check the console to see the user profile.
+*Explanation:* Different data types are used to manage a user's profile and preferences. Open the [CodePen](https://codepen.io/pen?template=mdXWyK) to see the user profile.
 
 ### Operators
 
 **Example:** Pricing Calculator
 
+[![Try it on CodePen](https://img.shields.io/badge/Try%20it%20on-CodePen-blue)](https://codepen.io/pen?template=mdXWyK)
 ```html
 <!DOCTYPE html>
 <html>
@@ -94,24 +95,24 @@ This guide covers JavaJavaScript concepts from basic to advanced with real-world
 <body>
   <h1>Check the console for the final price</h1>
   <script>
-    let basePrice = 50; // Base price of an item
-    let discount = 10;  // Discount amount
-    let taxRate = 0.08; // Tax rate
+    let basePrice = 50;
+    let discount = 10;
+    let taxRate = 0.08;
 
-    // Calculate final price
     let finalPrice = (basePrice - discount) * (1 + taxRate);
-    console.log(`Final Price: $${finalPrice.toFixed(2)}`); // Final Price: $43.20
+    console.log(`Final Price: $${finalPrice.toFixed(2)}`);
   </script>
 </body>
 </html>
 ```
 
-*Explanation:* Operators are used to compute the final price after applying discount and tax. Open this HTML file in a browser and check the console to see the result.
+*Explanation:* Operators are used to compute the final price after applying discount and tax. Open the [CodePen](https://codepen.io/pen?template=mdXWyK) to see the result.
 
 ### Control Flow
 
 **Example:** Access Control System
 
+[![Try it on CodePen](https://img.shields.io/badge/Try%20it%20on-CodePen-blue)](https://codepen.io/pen?template=mdXWyK)
 ```html
 <!DOCTYPE html>
 <html>
@@ -121,7 +122,7 @@ This guide covers JavaJavaScript concepts from basic to advanced with real-world
 <body>
   <h1>Check the console for access control messages</h1>
   <script>
-    let userRole = 'admin'; // User role
+    let userRole = 'admin';
 
     if (userRole === 'admin') {
       console.log('Access granted.');
@@ -129,7 +130,6 @@ This guide covers JavaJavaScript concepts from basic to advanced with real-world
       console.log('Access denied.');
     }
 
-    // Loop through roles
     let roles = ['guest', 'user', 'admin'];
     for (let i = 0; i < roles.length; i++) {
       console.log(`Role: ${roles[i]}`);
@@ -139,7 +139,7 @@ This guide covers JavaJavaScript concepts from basic to advanced with real-world
 </html>
 ```
 
-*Explanation:* Control flow statements manage user access based on roles. Open this HTML file in a browser and check the console for access control messages.
+*Explanation:* Control flow statements manage user access based on roles. Open the [CodePen](https://codepen.io/pen?template=mdXWyK) to see the access control messages.
 
 ## 2. Functions
 
@@ -147,6 +147,7 @@ This guide covers JavaJavaScript concepts from basic to advanced with real-world
 
 **Example:** Task Scheduler
 
+[![Try it on CodePen](https://img.shields.io/badge/Try%20it%20on-CodePen-blue)](https://codepen.io/pen?template=mdXWyK)
 ```html
 <!DOCTYPE html>
 <html>
@@ -156,23 +157,23 @@ This guide covers JavaJavaScript concepts from basic to advanced with real-world
 <body>
   <h1>Check the console for scheduled tasks</h1>
   <script>
-    // Function to schedule a task
     function scheduleTask(taskName, duration) {
       console.log(`Task "${taskName}" scheduled for ${duration} minutes.`);
     }
 
-    scheduleTask('Meeting', 30); // Task "Meeting" scheduled for 30 minutes.
+    scheduleTask('Meeting', 30);
   </script>
 </body>
 </html>
 ```
 
-*Explanation:* Functions are used to define and execute tasks with specific parameters. Open this HTML file in a browser and check the console for the scheduled tasks.
+*Explanation:* Functions are used to define and execute tasks with specific parameters. Open the [CodePen](https://codepen.io/pen?template=mdXWyK) to see the scheduled tasks.
 
 ### Function Expression
 
 **Example:** Email Formatter
 
+[![Try it on CodePen](https://img.shields.io/badge/Try%20it%20on-CodePen-blue)](https://codepen.io/pen?template=mdXWyK)
 ```html
 <!DOCTYPE html>
 <html>
@@ -187,18 +188,19 @@ This guide covers JavaJavaScript concepts from basic to advanced with real-world
     };
 
     let email = formatEmail('alice', 'example.com');
-    console.log(`Formatted Email: ${email}`); // Formatted Email: alice@example.com
+    console.log(`Formatted Email: ${email}`);
   </script>
 </body>
 </html>
 ```
 
-*Explanation:* Function expressions are used to create and use email formatting functions. Open this HTML file in a browser and check the console for the formatted email.
+*Explanation:* Function expressions are used to create and use email formatting functions. Open the [CodePen](https://codepen.io/pen?template=mdXWyK) to see the formatted email.
 
 ### Arrow Functions
 
 **Example:** Sales Tax Calculator
 
+[![Try it on CodePen](https://img.shields.io/badge/Try%20it%20on-CodePen-blue)](https://codepen.io/pen?template=mdXWyK)
 ```html
 <!DOCTYPE html>
 <html>
@@ -213,18 +215,19 @@ This guide covers JavaJavaScript concepts from basic to advanced with real-world
     let totalAmount = 100;
     let taxRate = 0.07;
     let tax = calculateTax(totalAmount, taxRate);
-    console.log(`Tax Amount: $${tax.toFixed(2)}`); // Tax Amount: $7.00
+    console.log(`Tax Amount: $${tax.toFixed(2)}`);
   </script>
 </body>
 </html>
 ```
 
-*Explanation:* Arrow functions provide a concise way to define tax calculation. Open this HTML file in a browser and check the console for the tax amount.
+*Explanation:* Arrow functions provide a concise way to define tax calculation. Open the [CodePen](https://codepen.io/pen?template=mdXWyK) to see the tax amount.
 
 ### Closures
 
 **Example:** Counter Application
 
+[![Try it on CodePen](https://img.shields.io/badge/Try%20it%20on-CodePen-blue)](https://codepen.io/pen?template=mdXWyK)
 ```html
 <!DOCTYPE html>
 <html>
@@ -235,7 +238,7 @@ This guide covers JavaJavaScript concepts from basic to advanced with real-world
   <h1>Check the console for counter values</h1>
   <script>
     function createCounter() {
-      let count = 0; // Private variable
+      let count = 0;
       return function() {
         count += 1;
         return count;
@@ -243,14 +246,14 @@ This guide covers JavaJavaScript concepts from basic to advanced with real-world
     }
 
     const counter = createCounter();
-    console.log(counter()); // 1
-    console.log(counter()); // 2
+    console.log(counter());
+    console.log(counter());
   </script>
 </body>
 </html>
 ```
 
-*Explanation:* Closures help in creating private state for counters. Open this HTML file in a browser and check the console for the counter values.
+*Explanation:* Closures help in creating private state for counters. Open the [CodePen](https://codepen.io/pen?template=mdXWyK) to see the counter values.
 
 ## 3. Objects and Arrays
 
@@ -258,6 +261,7 @@ This guide covers JavaJavaScript concepts from basic to advanced with real-world
 
 **Example:** E-commerce Product
 
+[![Try it on CodePen](https://img.shields.io/badge/Try%20it%20on-CodePen-blue)](https://codepen.io/pen?template=mdXWyK)
 ```html
 <!DOCTYPE html>
 <html>
@@ -272,22 +276,25 @@ This guide covers JavaJavaScript concepts from basic to advanced with real-world
       name: 'Smartphone',
       price: 699.99,
       displayInfo: function() {
-        console.log(`Product: ${this.name}, Price: $${this.price}`);
+        console.log(`Product: ${this.name}, Price: $${
+
+this.price}`);
       }
     };
 
-    product.displayInfo(); // Product: Smartphone, Price: $699.99
+    product.displayInfo();
   </script>
 </body>
 </html>
 ```
 
-*Explanation:* Objects represent real-world entities with properties and methods. Open this HTML file in a browser and check the console for the product information.
+*Explanation:* Objects are used to model e-commerce products with methods to display information. Open the [CodePen](https://codepen.io/pen?template=mdXWyK) to see the product details.
 
 ### Arrays
 
-**Example:** Task List
+**Example:** Student Grades
 
+[![Try it on CodePen](https://img.shields.io/badge/Try%20it%20on-CodePen-blue)](https://codepen.io/pen?template=mdXWyK)
 ```html
 <!DOCTYPE html>
 <html>
@@ -295,28 +302,30 @@ This guide covers JavaJavaScript concepts from basic to advanced with real-world
   <title>JavaScript Arrays Example</title>
 </head>
 <body>
-  <h1>Check the console for tasks</h1>
+  <h1>Check the console for student grades</h1>
   <script>
-    let tasks = ['Buy groceries', 'Clean the house', 'Pay bills'];
+    let grades = [85, 92, 78, 90, 88];
 
-    // Add a new task
-    tasks.push('Walk the dog');
+    function average(arr) {
+      let sum = arr.reduce((a, b) => a + b, 0);
+      return sum / arr.length;
+    }
 
-    // Iterate over tasks
-    tasks.forEach(task => console.log(`Task: ${task}`));
+    console.log(`Average Grade: ${average(grades).toFixed(2)}`);
   </script>
 </body>
 </html>
 ```
 
-*Explanation:* Arrays manage lists of tasks and provide methods to manipulate and display them. Open this HTML file in a browser and check the console for the tasks.
+*Explanation:* Arrays manage collections of data like student grades and compute averages. Open the [CodePen](https://codepen.io/pen?template=mdXWyK) to see the average grade.
 
 ## 4. Asynchronous JavaScript
 
 ### Callbacks
 
-**Example:** File Reading Simulation
+**Example:** Data Fetching
 
+[![Try it on CodePen](https://img.shields.io/badge/Try%20it%20on-CodePen-blue)](https://codepen.io/pen?template=mdXWyK)
 ```html
 <!DOCTYPE html>
 <html>
@@ -324,30 +333,30 @@ This guide covers JavaJavaScript concepts from basic to advanced with real-world
   <title>JavaScript Callbacks Example</title>
 </head>
 <body>
-  <h1>Check the console for file content</h1>
+  <h1>Check the console for fetched data</h1>
   <script>
-    function readFile(callback) {
+    function fetchData(callback) {
       setTimeout(() => {
-        callback('File content');
+        let data = { message: 'Data fetched successfully!' };
+        callback(data);
       }, 1000);
     }
 
-    readFile(content => {
-      console.log(content); // File content
+    fetchData((result) => {
+      console.log(result.message);
     });
   </script>
 </body>
 </html>
 ```
 
-*Explanation:*
-
- Callbacks handle asynchronous operations like reading files. Open this HTML file in a browser and check the console for the file content.
+*Explanation:* Callbacks are used to handle asynchronous data fetching. Open the [CodePen](https://codepen.io/pen?template=mdXWyK) to see the fetched data message.
 
 ### Promises
 
-**Example:** API Data Fetch
+**Example:** Promise Chaining
 
+[![Try it on CodePen](https://img.shields.io/badge/Try%20it%20on-CodePen-blue)](https://codepen.io/pen?template=mdXWyK)
 ```html
 <!DOCTYPE html>
 <html>
@@ -355,28 +364,36 @@ This guide covers JavaJavaScript concepts from basic to advanced with real-world
   <title>JavaScript Promises Example</title>
 </head>
 <body>
-  <h1>Check the console for fetched data</h1>
+  <h1>Check the console for promise results</h1>
   <script>
     function fetchData() {
       return new Promise((resolve, reject) => {
         setTimeout(() => {
-          resolve('Data received');
+          let data = { message: 'Data fetched with Promise!' };
+          resolve(data);
         }, 1000);
       });
     }
 
-    fetchData().then(data => console.log(data)); // Data received
+    fetchData()
+      .then(result => {
+        console.log(result.message);
+      })
+      .catch(error => {
+        console.error('Error:', error);
+      });
   </script>
 </body>
 </html>
 ```
 
-*Explanation:* Promises manage asynchronous operations and handle results or errors. Open this HTML file in a browser and check the console for the fetched data.
+*Explanation:* Promises handle asynchronous operations and chaining. Open the [CodePen](https://codepen.io/pen?template=mdXWyK) to see the promise results.
 
 ### Async/Await
 
-**Example:** User Data Fetch
+**Example:** Async/Await for Data Fetching
 
+[![Try it on CodePen](https://img.shields.io/badge/Try%20it%20on-CodePen-blue)](https://codepen.io/pen?template=mdXWyK)
 ```html
 <!DOCTYPE html>
 <html>
@@ -384,278 +401,22 @@ This guide covers JavaJavaScript concepts from basic to advanced with real-world
   <title>JavaScript Async/Await Example</title>
 </head>
 <body>
-  <h1>Check the console for user data</h1>
+  <h1>Check the console for async results</h1>
   <script>
-    async function fetchUserData() {
-      let response = await fetch('https://api.example.com/user');
-      let data = await response.json();
-      return data;
-    }
-
-    fetchUserData().then(data => console.log(data)).catch(error => console.error(error));
-  </script>
-</body>
-</html>
-```
-
-*Explanation:* Async/await simplifies asynchronous code, making it easier to read and write. Open this HTML file in a browser and check the console for the user data.
-
-## 5. Error Handling
-
-### try...catch
-
-**Example:** Division Operation
-
-```html
-<!DOCTYPE html>
-<html>
-<head>
-  <title>JavaScript Error Handling Example</title>
-</head>
-<body>
-  <h1>Check the console for error handling</h1>
-  <script>
-    function divide(a, b) {
-      try {
-        if (b === 0) throw new Error('Cannot divide by zero');
-        return a / b;
-      } catch (error) {
-        console.error(error.message);
-      }
-    }
-
-    console.log(divide(10, 2)); // 5
-    console.log(divide(10, 0)); // Cannot divide by zero
-  </script>
-</body>
-</html>
-```
-
-*Explanation:* Error handling manages unexpected issues like division by zero. Open this HTML file in a browser and check the console for error handling results.
-
-## 6. JavaScript in the Browser
-
-### DOM Manipulation
-
-**Example:** To-do List Application
-
-```html
-<!DOCTYPE html>
-<html>
-<head>
-  <title>JavaScript DOM Manipulation Example</title>
-</head>
-<body>
-  <ul id="todo-list">
-    <li>Buy groceries</li>
-    <li>Clean the house</li>
-  </ul>
-  <button onclick="addItem()">Add Task</button>
-
-  <script>
-    function addItem() {
-      const ul = document.getElementById('todo-list');
-      const li = document.createElement('li');
-      li.textContent = 'New Task';
-      ul.appendChild(li);
-    }
-  </script>
-</body>
-</html>
-```
-
-*Explanation:* DOM manipulation allows dynamic updates to a webpage’s content. Open this HTML file in a browser, click the button, and see the new task added to the list.
-
-### Event Handling
-
-**Example:** Form Submission
-
-```html
-<!DOCTYPE html>
-<html>
-<head>
-  <title>JavaScript Event Handling Example</title>
-</head>
-<body>
-  <form id="myForm">
-    <input type="text" id="username" placeholder="Enter username" />
-    <button type="submit">Submit</button>
-  </form>
-  <p id="message"></p>
-
-  <script>
-    document.getElementById('myForm').addEventListener('submit', function(event) {
-      event.preventDefault();
-      const username = document.getElementById('username').value;
-      document.getElementById('message').textContent = `Hello, ${username}!`;
-    });
-  </script>
-</body>
-</html>
-```
-
-*Explanation:* Event handling manages user interactions such as form submissions. Open this HTML file in a browser, fill in the form, and click submit to see the greeting message.
-
-## 7. Advanced Concepts
-
-### Understanding the Event Loop
-
-**Example:** Task Scheduling
-
-```html
-<!DOCTYPE html>
-<html>
-<head>
-  <title>JavaScript Event Loop Example</title>
-</head>
-<body>
-  <h1>Check the console for event loop example</h1>
-  <script>
-    console.log('Start');
-
-    setTimeout(() => {
-      console.log('Timeout');
-    }, 0);
-
-    console.log('End');
-
-    // Output:
-    // Start
-    // End
-    // Timeout
-  </script>
-</body>
-</html>
-```
-
-*Explanation:* The event loop processes asynchronous callbacks after the current execution stack is clear. Open this HTML file in a browser and check the console for the event loop output.
-
-### Generators and Iterators
-
-**Example:** Paginated Data Fetching
-
-```html
-<!DOCTYPE html>
-<html>
-<head>
-  <title>JavaScript Generators Example</title>
-</head>
-<body>
-  <h1>Check the console for paginated data</h1>
-  <script>
-    function* paginatedData() {
-      yield 'Page 1';
-      yield 'Page 2';
-      yield 'Page 3';
-    }
-
-    const dataIterator = paginatedData();
-    for (let page of dataIterator) {
-      console.log(page); // Page 1, Page 2, Page 3
-    }
-  </script>
-</body>
-</html>
-```
-
-*Explanation:* Generators provide a way to produce and iterate over sequences of data. Open this HTML file in a browser and check the console for paginated data.
-
-### Reflect API
-
-**Example:** Property Management
-
-```html
-<!DOCTYPE html>
-<html>
-<head>
-  <title>JavaScript Reflect API Example</title>
-</head>
-<body>
-  <h1>Check the console for Reflect API usage</h1>
-  <script>
-    const person = {
-      name: 'John',
-      age: 30
-    };
-
-    // Get property
-    console.log(Reflect.get(person, 'name')); // John
-
-    // Set property
-    Reflect.set(person, 'age', 31);
-    console.log(person.age); // 31
-
-    // Delete property
-    Reflect.deleteProperty(person, 'age');
-    console.log(person.age); // undefined
-  </script>
-</body>
-</html>
-```
-
-*Explanation:* The Reflect API provides methods to intercept and manage object operations. Open this HTML file in a browser and check the console for Reflect API usage.
-
-### Proxy API
-
-**Example:** Validation of User Input
-
-```html
-<!DOCTYPE html>
-<html>
-<head>
-  <title>JavaScript Proxy API Example</title>
-</head>
-<body>
-  <h1>Check the console for Proxy API usage</h1>
-  <script>
-    const handler = {
-      set(target, property, value) {
-        if (property === 'age' && (value < 0 || value > 120)) {
-          throw new Error('Invalid age');
-        }
-        target[property] = value;
-        return true;
-      }
-    };
-
-    const user = new Proxy({}, handler);
-
-    try {
-      user.age = 25;
-      console.log(user.age); // 25
-      user.age = 150; // Throws error
-    } catch (e) {
-      console.error(e.message); // Invalid age
-    }
-  </script>
-</body>
-</html>
-```
-
-*Explanation:* The Proxy API enables custom handling of property assignments and other operations. Open this HTML file in a browser and check the console for Proxy API usage.
-
-### Async Iterators
-
-**Example:** Data Streaming
-
-```html
-<!DOCTYPE html>
-<html>
-<head>
-  <title>JavaScript Async Iterators Example</title>
-</head>
-<body>
-  <h1>Check the console for async data streaming</h1>
-  <script>
-    async function* fetchData() {
-      yield 'Chunk 1';
-      yield 'Chunk 2';
-      yield 'Chunk 3';
+    async function fetchData() {
+      return new Promise((resolve) => {
+        setTimeout(() => {
+          resolve({ message: 'Data fetched with Async/Await!' });
+        }, 1000);
+      });
     }
 
     (async () => {
-      for await (const chunk of fetchData()) {
-        console.log(chunk); // Chunk 1, Chunk 2, Chunk 3
+      try {
+        let result = await fetchData();
+        console.log(result.message);
+      } catch (error) {
+        console.error('Error:', error);
       }
     })();
   </script>
@@ -663,201 +424,158 @@ This guide covers JavaJavaScript concepts from basic to advanced with real-world
 </html>
 ```
 
-*Explanation:* Async iterators manage asynchronous data streams and provide a way to handle each chunk of data as it becomes available. Open this HTML file in a browser and check the console for async data streaming.
+*Explanation:* Async/Await simplifies working with promises. Open the [CodePen](https://codepen.io/pen?template=mdXWyK) to see the async results.
 
-### Decorators (Requires Babel or TypeScript)
+## 5. Error Handling
 
-**Example:** Logging Method Calls
+### Try/Catch
 
+**Example:** Error Handling in Calculations
+
+[![Try it on CodePen](https://img.shields.io/badge/Try%20it%20on-CodePen-blue)](https://codepen.io/pen?template=mdXWyK)
 ```html
 <!DOCTYPE html>
 <html>
 <head>
-  <title>JavaScript Decorators Example</title>
+  <title>JavaScript Try/Catch Example</title>
 </head>
 <body>
-  <h1>Check the console for decorated method</h1>
+  <h1>Check the console for error handling</h1>
   <script>
-    function log(target, key, descriptor) {
-      const originalMethod = descriptor.value;
-      descriptor.value = function(...args) {
-        console.log(`Calling ${key} with arguments:`, args);
-        return originalMethod.apply(this, args);
-      };
-      return descriptor;
-    }
-
-    class Calculator {
-      @log
-      add(a, b) {
-        return a + b;
+    function divide(a, b) {
+      try {
+        if (b === 0) throw new Error('Division by zero');
+        return a / b;
+      } catch (error) {
+        console.error(error.message);
       }
     }
 
-    const calc = new Calculator();
-    console.log(calc.add(2, 3)); // Calling add with arguments: [ 2, 3 ]
-                                 // 5
+    console.log(divide(10, 2));
+    console.log(divide(10, 0));
   </script>
 </body>
 </html>
 ```
 
+*Explanation:* `try/catch` is used to handle errors gracefully in calculations. Open the [CodePen](https://codepen.io/pen?template=mdXWyK) to see the error handling results.
 
+## 6. JavaScript in the Browser
 
-*Explanation:* Decorators enhance class methods by adding logging or other functionality. Note that you'll need a tool like Babel to use decorators. Open this HTML file in a browser and check the console for the decorated method.
+### DOM Manipulation
 
-### Memory Management
+**Example:** Updating Page Content
 
-**Example:** Memory Leak Prevention
-
+[![Try it on CodePen](https://img.shields.io/badge/Try%20it%20on-CodePen-blue)](https://codepen.io/pen?template=mdXWyK)
 ```html
 <!DOCTYPE html>
 <html>
 <head>
-  <title>JavaScript Memory Management Example</title>
+  <title>JavaScript DOM Manipulation Example</title>
 </head>
 <body>
-  <h1>Check the console for memory management</h1>
-  <script>
-    let cache = [];
+  <h1 id="title">Hello, World!</h1>
+  <button onclick="updateTitle()">Change Title</button>
 
-    function cacheData(data) {
-      cache.push(data);
-      if (cache.length > 10) {
-        cache.shift(); // Remove the oldest data
-      }
+  <script>
+    function updateTitle() {
+      document.getElementById('title').textContent = 'Hello, JavaScript!';
+    }
+  </script>
+</body>
+</html>
+```
+
+*Explanation:* DOM manipulation is used to update page content dynamically. Open the [CodePen](https://codepen.io/pen?template=mdXWyK) to interact with the title update.
+
+## 7. Advanced Concepts
+
+### Prototypes and Inheritance
+
+**Example:** Inheritance Example
+
+[![Try it on CodePen](https://img.shields.io/badge/Try%20it%20on-CodePen-blue)](https://codepen.io/pen?template=mdXWyK)
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Prototypes Example</title>
+</head>
+<body>
+  <h1>Check the console for inheritance results</h1>
+  <script>
+    function Animal(name) {
+      this.name = name;
     }
 
-    cacheData('Data 1');
-    cacheData('Data 2');
-    // Add more data and ensure that the cache doesn't grow indefinitely
-  </script>
-</body>
-</html>
-```
+    Animal.prototype.speak = function() {
+      console.log(`${this.name} makes a noise.`);
+    };
 
-*Explanation:* Proper memory management prevents leaks by controlling the size and lifespan of data storage. Open this HTML file in a browser and check the console for memory management.
-
-### Advanced Function Concepts
-
-#### Currying
-
-**Example:** Configurable Math Operations
-
-```html
-<!DOCTYPE html>
-<html>
-<head>
-  <title>JavaScript Currying Example</title>
-</head>
-<body>
-  <h1>Check the console for curried functions</h1>
-  <script>
-    function multiply(a) {
-      return function(b) {
-        return a * b;
-      };
+    function Dog(name) {
+      Animal.call(this, name);
     }
 
-    const double = multiply(2);
-    console.log(double(5)); // 10
-  </script>
-</body>
-</html>
-```
+    Dog.prototype = Object.create(Animal.prototype);
+    Dog.prototype.constructor = Dog;
 
-*Explanation:* Currying transforms functions to handle partial application of arguments. Open this HTML file in a browser and check the console for curried functions.
-
-### Symbol and Well-Known Symbols
-
-**Example:** Unique Object Keys
-
-```html
-<!DOCTYPE html>
-<html>
-<head>
-  <title>JavaScript Symbols Example</title>
-</head>
-<body>
-  <h1>Check the console for symbols</h1>
-  <script>
-    const uniqueId = Symbol('id');
-    const user = {
-      [uniqueId]: 123
+    Dog.prototype.speak = function() {
+      console.log(`${this.name} barks.`);
     };
 
-    console.log(user[uniqueId]); // 123
+    let dog = new Dog('Rex');
+    dog.speak();
   </script>
 </body>
 </html>
 ```
 
-*Explanation:* Symbols are used for unique property keys to avoid naming collisions. Open this HTML file in a browser and check the console for symbol usage.
+*Explanation:* Prototypes and inheritance allow for extended functionality in JavaScript. Open the [CodePen](https://codepen.io/pen?template=mdXWyK) to see inheritance in action.
 
-### Function Composition
+### Modules
 
-**Example:** Combining Utility Functions
+**Example:** JavaScript Modules
 
+[![Try it on CodePen](https://img.shields.io/badge/Try%20it%20on-CodePen-blue)](https://codepen.io/pen?template=mdXWyK)
 ```html
 <!DOCTYPE html>
 <html>
 <head>
-  <title>JavaScript Function Composition Example</title>
+  <title>JavaScript Modules Example</title>
 </head>
 <body>
-  <h1>Check the console for composed functions</h1>
-  <script>
-    const add = (a, b) => a + b;
-    const multiply = (a, b) => a * b;
+  <h1>Check the console for module results</h1>
+  <script type="module">
+    import { greet } from './greet.js';
 
-    const compose = (f, g) => (x, y) => f(g(x, y), y);
-
-    const result = compose(multiply, add)(2, 3);
-    console.log(result); // 10
+    console.log(greet('World'));
   </script>
 </body>
 </html>
 ```
 
-*Explanation:* Function composition combines multiple functions to create complex operations. Open this HTML file in a browser and check the console for function composition results.
-
-### Web Workers
-
-**Example:** Background Task Processing
-
-**index.html**
-
-```html
-<!DOCTYPE html>
-<html>
-<head>
-  <title>JavaScript Web Worker Example</title>
-</head>
-<body>
-  <h1>Check the console for web worker results</h1>
-  <script>
-    const worker = new Worker('worker.js');
-
-    worker.postMessage('Start processing');
-
-    worker.onmessage = function(event) {
-      console.log('Message from worker:', event.data);
-    };
-  </script>
-</body>
-</html>
-```
-
-**worker.js**
-
+**greet.js**
 ```javascript
-onmessage = function(event) {
-  let result = 'Processing complete';
-  postMessage(result);
-};
+export function greet(name) {
+  return `Hello, ${name}!`;
+}
 ```
 
-*Explanation:* Web Workers allow for background processing without blocking the main thread. Open `index.html` in a browser and check the console for web worker results.
+*Explanation:* JavaScript modules help in organizing code and reusing functions. Open the [CodePen](https://codepen.io/pen?template=mdXWyK) to see modules in action.
 
+---
+
+Feel free to explore the interactive examples and expand your JavaScript knowledge!
+
+For more in-depth learning, check out the following resources:
+
+- [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [JavaScript.info](https://javascript.info/)
+- [Eloquent JavaScript](https://eloquentjavascript.net/)
+
+Happy coding!
+```
+## Contact
 
 For any questions or comments, please reach out to [Aj](mailto:jaymeajarns@gmail.com).
+```
