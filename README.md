@@ -1,5 +1,4 @@
 
-```markdown
 # JavaScript Guide
 
 Welcome to the JavaScript Guide! This interactive README covers JavaScript concepts from basic to advanced with real-world examples and interactive code snippets.
@@ -14,7 +13,6 @@ Welcome to the JavaScript Guide! This interactive README covers JavaScript conce
 6. [JavaScript in the Browser](#javascript-in-the-browser)
 7. [Advanced Concepts](#advanced-concepts)
 
----
 
 ## 1. Basics of JavaScript
 
@@ -578,4 +576,3 @@ Happy coding!
 ## Contact
 
 For any questions or comments, please reach out to [Aj](mailto:jaymeajarns@gmail.com).
-```
