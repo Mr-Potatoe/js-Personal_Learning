@@ -15,7 +15,8 @@ This project demonstrates the use of ES modules in a basic web development setup
 ```
 
 - **`index.html`**: The main HTML file that loads the module and displays the result.
-- **`import.mjs`**: The ES module file that exports the `add` function.
+- **`import.mjs`**: The ES module file that imports the `add` function.
+- **`export.mjs`**: The ES module file that exports the `add` function.
 - **`styles/style.css`**: (Optional) Stylesheet for additional styling.
 
 ## Getting Started
