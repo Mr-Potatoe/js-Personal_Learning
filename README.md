@@ -577,4 +577,3 @@ For more in-depth learning, check out the following resources:
 - [Eloquent JavaScript](https://eloquentjavascript.net/)
 
 Happy coding!
-```
