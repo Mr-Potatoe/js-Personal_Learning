@@ -7,13 +7,14 @@ This project demonstrates the use of `async` and `await` in JavaScript for fetch
 ```
 /project-root
   /index.html
-  /script.js
+  /scripts
+    /index.js
   /styles
     /style.css
 ```
 
 - **`index.html`**: The main HTML file that includes the JavaScript and displays the user data.
-- **`script.js`**: The JavaScript file containing the async functions and logic for handling user data.
+- **`scripts/index.js`**: The JavaScript file containing the async functions and logic for handling user data.
 - **`styles/style.css`**: (Optional) Stylesheet for additional styling.
 
 ## Getting Started
@@ -64,14 +65,14 @@ Create the following files and copy the provided content into each.
   </table>
   <div id="demo"></div>
 
-  <script src="scripts/script.js"></script>
+  <script src="scripts/index.js"></script>
 </body>
 </html>
 ```
 
-#### **`script.js`**
+#### **`index.js`**
 
-**`script.js`:**
+**`index.js`:**
 
 ```javascript
 let message = "Hello World";
