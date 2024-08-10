@@ -77,9 +77,9 @@ Contains the basic HTML structure and includes a `<script>` tag with `type="modu
 </head>
 <body>
   <h1>Hello, World!</h1>
-  <p id="demo"></p>
+  <p id="demo"></p> 
   
-  <script type="module" src = "scripts/import.mjs">
+  <script type="module" src = "scripts/import.mjs"> //type = "module" Enables the use of import and export syntax.
   </script>
 </body>
 </html>
@@ -109,9 +109,9 @@ const b = 3;
 
 const result = add(a, b);
 
-console.log(result);
+console.log(result); // show log to the console
 
-document.getElementById('demo').innerHTML = result;
+document.getElementById('demo').innerHTML = result; // display to the index.html page
 ```
 
 ### `styles/style.css`
