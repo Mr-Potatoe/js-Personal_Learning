@@ -1,7 +1,3 @@
-Here’s a detailed `README.md` for your project that includes instructions on setup, usage, and troubleshooting:
-
----
-
 # ES Module Example
 
 This project demonstrates the use of ES modules in a basic web development setup. It includes an HTML file that imports a JavaScript module to perform a simple addition operation and display the result on the web page.
@@ -11,7 +7,9 @@ This project demonstrates the use of ES modules in a basic web development setup
 ```
 /project-root
   /index.html
-  /import.mjs
+  /scripts
+    /export.js
+    /import.js
   /styles
     /style.css
 ```
@@ -80,30 +78,39 @@ Contains the basic HTML structure and includes a `<script>` tag with `type="modu
   <h1>Hello, World!</h1>
   <p id="demo"></p>
   
-  <script type="module">
-    import { add } from './import.mjs';
-    
-    const a = 2;
-    const b = 2;
-
-    const result = add(a, b);
-
-    document.getElementById('demo').innerHTML = result;
+  <script type="module" src = "scripts/import.mjs">
   </script>
 </body>
 </html>
 ```
 
+### `export.mjs`
+
+exports the `add` function 
+
+```javascript
+
+export function add(a, b) {
+    return a + b;
+}
+```
 ### `import.mjs`
 
-Exports the `add` function used to perform addition.
+Imports the `add` function used to perform addition.
 
 ```javascript
 // import.mjs
 
-export function add(a, b) {
-  return a + b;
-}
+import {add} from './export.js';
+
+const a = 2;
+const b = 3;
+
+const result = add(a, b);
+
+console.log(result);
+
+document.getElementById('demo').innerHTML = result;
 ```
 
 ### `styles/style.css`
@@ -125,7 +132,3 @@ export function add(a, b) {
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-Feel free to customize the README as needed for your specific setup or additional features.
