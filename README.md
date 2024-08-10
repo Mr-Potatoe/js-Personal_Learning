@@ -5,12 +5,12 @@ This guide covers JavaScript concepts from basic to advanced with real-world exa
 ## Table of Contents
 
 1. [Basics of JavaScript](##basics-of-javascript)
-2. [Functions](#functions)
-3. [Objects and Arrays](#objects-and-arrays)
-4. [Asynchronous JavaScript](#asynchronous-javascript)
-5. [Error Handling](#error-handling)
-6. [JavaScript in the Browser](#javascript-in-the-browser)
-7. [Advanced Concepts](#advanced-concepts)
+2. [Functions](##functions)
+3. [Objects and Arrays](##objects-and-arrays)
+4. [Asynchronous JavaScript](##asynchronous-javascript)
+5. [Error Handling](##error-handling)
+6. [JavaScript in the Browser](##javascript-in-the-browser)
+7. [Advanced Concepts](##advanced-concepts)
 
 ---
 
