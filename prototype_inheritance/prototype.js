@@ -1,6 +1,5 @@
 // prototype inheritance using ES6 classes
 
-
 // Define the Person class
 class Person {
     constructor(name) {
