@@ -1,7 +1,7 @@
-// const arr = "heeloo";
-// for (let num of arr) {
-//     console.log(num); // Output: 1, 2, 3, 4, 5
-// }
+const names = "heeloo";
+for (let i in names) {
+    console.log(i); // Output: 1, 2, 3, 4, 5
+}
 
 // outer: for (let n = 0; n < 10; n++) {
 //     for (let o = 0; o < 10; o++) {

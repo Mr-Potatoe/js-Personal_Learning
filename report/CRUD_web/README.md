@@ -70,8 +70,8 @@ crud-web/
    - Create the database and table by running the following SQL commands in your MySQL client:
 
      ```sql
-     CREATE DATABASE IF NOT EXISTS testdb;
-     USE testdb;
+     CREATE DATABASE IF NOT EXISTS crud_db;
+     USE crud_db;
 
      CREATE TABLE IF NOT EXISTS users (
          id INT AUTO_INCREMENT PRIMARY KEY,
