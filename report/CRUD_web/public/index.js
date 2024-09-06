@@ -4,6 +4,45 @@ document.addEventListener('DOMContentLoaded', () => {
     const deleteUserForm = document.getElementById('deleteUserForm');
     const usersList = document.getElementById('usersList');
 
+    // Regular expressions for validation
+    const nameRegex = /^[A-Za-z]+(?: [A-Za-z]+)*$/; // Allows letters with one space between words
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Basic email format
+
+    // Display an error message
+    function showError(form, message) {
+        const errorElement = form.querySelector('.error');
+        errorElement.textContent = message;
+        errorElement.style.color = 'red';
+        errorElement.style.display = 'block';
+    }
+
+    // Clear error messages
+    function clearError(form) {
+        const errorElement = form.querySelector('.error');
+        errorElement.textContent = '';
+        errorElement.style.display = 'none';
+    }
+
+    // Validate name (letters with one space between words)
+    function validateName(name) {
+        console.log(`Validating name: ${name}`);
+        return nameRegex.test(name);
+    }
+
+    // Validate email format
+    function validateEmail(email) {
+        return emailRegex.test(email);
+    }
+
+    // Capitalize the first letter of each word
+    function capitalizeName(name) {
+        return name
+            .toLowerCase()
+            .split(' ')
+            .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+            .join(' ');
+    }
+
     // Fetch and display all users
     function fetchUsers() {
         fetch('/users')
@@ -33,17 +72,32 @@ document.addEventListener('DOMContentLoaded', () => {
                 `;
             });
     }
-    
-    fetchUsers(); // Initial load of users
-    
 
-    
+    fetchUsers(); // Initial load of users
+
     // Create a new user
     createUserForm.addEventListener('submit', (e) => {
         e.preventDefault();
-        const name = document.getElementById('name').value;
+        let name = document.getElementById('name').value;
         const email = document.getElementById('email').value;
-        
+
+        clearError(createUserForm);
+
+        // Validate name and email
+        if (!validateName(name)) {
+            showError(createUserForm, 'Name must contain only letters with a single space between words');
+            return;
+        }
+        if (!validateEmail(email)) {
+            showError(createUserForm, 'Please enter a valid email');
+            return;
+        }
+
+        // Capitalize the first letter of each word
+        name = capitalizeName(name);
+
+        console.log(`Submitting user: ${name}, ${email}`);
+
         fetch('/users', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
@@ -54,15 +108,33 @@ document.addEventListener('DOMContentLoaded', () => {
             alert(message);
             fetchUsers();
             createUserForm.reset();
-        });
+        })
+        .catch(error => console.error('Error during user creation:', error));
     });
 
     // Update a user
     updateUserForm.addEventListener('submit', (e) => {
         e.preventDefault();
         const id = document.getElementById('updateId').value;
-        const name = document.getElementById('updateName').value;
+        let name = document.getElementById('updateName').value;
         const email = document.getElementById('updateEmail').value;
+
+        clearError(updateUserForm);
+
+        // Validate name and email
+        if (!validateName(name)) {
+            showError(updateUserForm, 'Name must contain only letters with a single space between words');
+            return;
+        }
+        if (!validateEmail(email)) {
+            showError(updateUserForm, 'Please enter a valid email');
+            return;
+        }
+
+        // Capitalize the first letter of each word
+        name = capitalizeName(name);
+
+        console.log(`Updating user: ${name}, ${email}`);
 
         fetch(`/users/${id}`, {
             method: 'PUT',
@@ -74,7 +146,8 @@ document.addEventListener('DOMContentLoaded', () => {
             alert(message);
             fetchUsers();
             updateUserForm.reset();
-        });
+        })
+        .catch(error => console.error('Error during user update:', error));
     });
 
     // Delete a user
@@ -90,6 +163,7 @@ document.addEventListener('DOMContentLoaded', () => {
             alert(message);
             fetchUsers();
             deleteUserForm.reset();
-        });
+        })
+        .catch(error => console.error('Error during user deletion:', error));
     });
 });
